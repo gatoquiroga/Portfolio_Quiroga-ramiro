@@ -189,7 +189,7 @@ label,
 }
 
 .logo {
-    display: none;
+    display: flex;
     background-color: var(--color-secundario-blueElectric);
     flex-flow: row nowrap;
     justify-content: center;
@@ -198,6 +198,7 @@ label,
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 
     width: 100%;
     height: 100vh;
@@ -250,5 +251,46 @@ label,
     
 }
 .Botones-btn:hover{
-    background-color: green;
+    background-color: rgb(133, 107, 49);
+}
+
+.Carrousel{
+    width: 60%;
+    min-height: 5rem;
+    margin:  auto;
+    position:relative;
+    overflow: hidden;
+}
+.Carrousel-container{
+    width: calc(100% * 3);
+    min-height: 5rem;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    transform: all .10s ease;
+    
+}
+
+.Carrousel-img{
+   
+    object-fit: contain;
+}
+
+.Carrousel-arrow{
+    width: 3rem;
+    height: 3rem;
+    
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    border-radius: 15%;
+    color: var(--color-primario--white);
+
+}
+.Next{
+    right: 0;
+
+}
+.Prev{
+    left: 0;
 }
