@@ -33,3 +33,4 @@ prev.addEventListener(`click`,()=>{
     console.log(foto)
 })
 
+
