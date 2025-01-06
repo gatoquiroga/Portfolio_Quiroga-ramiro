@@ -628,12 +628,35 @@ label,
 }
 }
 
-@media ( max-width:422px){
+@media ( max-width:525px ) { 
+    .Header{
+       
+    }
     .Sobremi-p{
     
         font-size: 0.8rem;
+    }
+    .Skills-grid{
+            display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Header-div{
+        
+        max-height: 20px;
+        background-color: blue;
+        margin: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
 
-}
-.Skills-grid{
-    display: grid;
-grid-template-columns: repeat(1, 1fr);}}
+    }
+    .Header-btn{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    }
+
