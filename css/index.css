@@ -643,7 +643,7 @@ label,
     .Header-div{
         
         max-height: 20px;
-        background-color: blue;
+        
         margin: auto;
         display: flex;
         flex-flow: row nowrap;

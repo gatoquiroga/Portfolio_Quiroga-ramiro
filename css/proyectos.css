@@ -1,11 +1,12 @@
 .Proyectos {
     
     margin:40px auto;
-    width:50%;
+    width:70%;
     display: grid;
     grid-template-columns: repeat(2,2fr);
     gap: 2rem;
     justify-content: center;
+    
 }
 
 .Proyectos-div {
@@ -17,6 +18,7 @@
     min-width: 300px;
     min-height: 30vh;
     text-align: center;
+    
 }
 
 .Proyectos-img{
@@ -27,13 +29,25 @@
     object-fit: cover;}
 
 .Proyectos-h2{
-    font-size: 2rem
+    margin: 100px auto;
+    font-size: 2rem;
+    box-shadow: .7rem .7rem .7rem var(--color-gama-sun);
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .Proyectos-div:hover{
     transform: scale(1.1);
     
-
-  
     
+}
+.Proyectos-a{
+    font-size: 2rem;
+    color: var(--color-about-brownSugar);
+}
+
+@media (max-width:667px){
+    .Proyectos{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
