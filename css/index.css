@@ -1101,6 +1101,37 @@ label,
 
 }
 @media (max-width:400px){
+    .Header{
+        
+        width: 100%;
+        min-height: 10vh;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+    .Header-nav{
+        position: absolute;
+        top: -10%;
+        right: 10%;
+    }
+    .Header-ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Header-btn{
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: end;
+        gap: 5%;
+        width: 60%;
+        min-height: 10vh;
+    }
     .Main{
         width: 100%;
         min-height: 30vh;
@@ -1122,4 +1153,10 @@ label,
             font-size: 2.5rem;
         }
     
+}
+@media (max-width:300px){
+    .Sobremi-picture{
+        width: 200px;
+        min-height: 20vh;
+    }
 }
