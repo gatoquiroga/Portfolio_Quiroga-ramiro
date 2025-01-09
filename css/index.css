@@ -891,6 +891,19 @@ label,
     }
 }
 @media(max-width:800px){
+    .Main{
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        flex-flow: colum nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+        #bg-video{
+            width: 100%;
+            height: 50vh;
+        }
     .Form{
         display: flex;
         flex-flow: column nowrap;
@@ -947,14 +960,20 @@ label,
 
 @media (max-width:700px) {
     .Header-ul {
-
+        
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 2px;
 
 
+    }
+    .Header-li{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: end;
     }
     .Header-btn-btn{
         font-size: 0.8rem;
@@ -990,10 +1009,22 @@ label,
 
 @media (max-width:525px) {
     .Header {
+      
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
+    }
+    .Header-ul{
+        
+             width: 100px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: end;
+        align-items: center;
+        gap: 2px;
+        
+       
     }
 
     .Sobremi-p {
@@ -1003,12 +1034,19 @@ label,
 
     .Skills-grid {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .Skills-div{
+        min-width: 35px;
+        overflow: hidden;
+        border-radius: 20%;
     }
 
     .Header-div {
 
-        width: 15%;
+        width: 10%;
+        min-height: 3%;
+        
 
 
         display: flex;
@@ -1020,9 +1058,17 @@ label,
 
     .Header-btn {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row ;
         justify-content: center;
         align-content: center;
+        
+    }
+    .Header-btn-btn{
+        font-size: 0.4rem;
+    }
+    .bi{
+        
+        width: 10px;
     }
     .Form-h2{
         font-size: 2.5rem;
@@ -1034,4 +1080,27 @@ label,
         font-size: 0.8rem;
     }
 
+}
+@media (max-width:400px){
+    .Main{
+        width: 100%;
+        min-height: 30vh;
+        display: flex;
+        flex-flow: colum nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+        #bg-video{
+            width: 100%;
+            height: 30vh;
+        }
+
+        .Sobremi-div{
+            gap: 20px;
+        }
+        .Sobremi-h2{
+            font-size: 2.5rem;
+        }
+    
 }
