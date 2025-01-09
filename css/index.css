@@ -1245,13 +1245,18 @@ label,
     }
 
     .Sobremi-picture {
-        margin-top: 50px;
         width: 100%;
+        min-height: 300px;
+        margin: auto;
+        width: 100%;
+    }
+    .About-h3{
+        font-size: 1.8rem;
     }
 
 }
 
-@media (max-width:300px) {
+@media (max-width:370px) {
     .Sobremi-picture {
         width: 200px;
         min-height: 20vh;
