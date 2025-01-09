@@ -54,6 +54,13 @@ svg {
     --color-about-principal: rgb(168, 159, 142);
 
 
+    
+
+
+
+}
+
+body {
     font-family: "Nunito Sans", serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -61,16 +68,6 @@ svg {
     font-variation-settings:
         "wdth" 100,
         "YTLC" 500;
-
-
-
-}
-
-body {
-    font-family: "Orbitron", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
 
     background-color: var(--color-gama-black);
     color: var(--color-primario--white);
@@ -946,6 +943,9 @@ label,
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+    }
+    .About{
+        margin-top: 300px;
     }
 
     .About-p {
