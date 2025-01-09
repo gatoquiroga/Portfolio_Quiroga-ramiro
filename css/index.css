@@ -136,7 +136,9 @@ label,
 
 .Header-picture {}
 
-.Header-img {}
+.Header-img {
+    object-fit: cover;
+}
 
 .Header-btn {
 
@@ -157,7 +159,7 @@ label,
 
 .Header-nav {
 
-    
+
     width: 10%;
     display: flex;
     flex-flow: row nowrap;
@@ -168,7 +170,7 @@ label,
 .Header-ul {
     width: 100%;
     min-height: 40px;
-    
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -176,7 +178,8 @@ label,
 
     gap: 20px;
 }
-.bi{
+
+.bi {
     width: 40px;
     min-height: 30px;
 }
@@ -787,8 +790,9 @@ label,
 .Form-btn:hover {
     background-color: #d2741b;
 }
-@media (max-width:1900px){
-    .Form-izq{
+
+@media (max-width:1900px) {
+    .Form-izq {
         font-size: 1rem;
         display: flex;
         flex-flow: column nowrap;
@@ -796,10 +800,12 @@ label,
         align-items: start;
         gap: 40px;
     }
-    .Form-der{
+
+    .Form-der {
         margin: 50px auto;
     }
 }
+
 @media (max-width: 1450px) {
     .Sobremi {
         min-height: 70vh;
@@ -819,15 +825,18 @@ label,
         width: 100%;
         display: flex;
         flex-flow: row wrap;
-        
+
     }
-    .Skills-h3{
+
+    .Skills-h3 {
         margin-top: 70px;
     }
-    .About-h3{
+
+    .About-h3 {
         font-size: 3rem;
     }
-    .About-p{
+
+    .About-p {
         font-size: 1.3rem;
     }
 }
@@ -844,7 +853,8 @@ label,
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .Skills-h3{
+
+    .Skills-h3 {
         margin-bottom: 40px;
     }
 
@@ -859,7 +869,7 @@ label,
 
     .Header-li {
         width: 50px;
-        
+
     }
 
     .Header-div {
@@ -872,26 +882,31 @@ label,
         box-sizing: border-box;
         font-size: 3rem;
     }
-    .bi{
+
+    .bi {
         width: 20px;
     }
-    .Form{
+
+    .Form {
         margin-top: 100px;
         width: 90%;
     }
-    .Form-izq{
+
+    .Form-izq {
         font-size: 1rem;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: start;
     }
-    .Form-btn{
+
+    .Form-btn {
         width: 50%;
     }
 }
-@media(max-width:800px){
-    .Main{
+
+@media(max-width:800px) {
+    .Main {
         width: 100%;
         min-height: 50vh;
         display: flex;
@@ -899,67 +914,78 @@ label,
         justify-content: center;
         align-items: center;
     }
-    
-        #bg-video{
-            width: 100%;
-            height: 50vh;
-        }
-    .Form{
+
+    #bg-video {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .Form {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
     }
-    .About-p{
+
+    .About-p {
         font-size: 1rem;
     }
-    .Sobremi{
+
+    .Sobremi {
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: center;
         gap: 60px;
     }
-    .Sobremi-picture{
+
+    .Sobremi-picture {
         width: 60%;
     }
-    .About{
+
+    .About {
         display: flex;
         flex-flow: column-reverse nowrap;
         justify-content: center;
         align-items: center;
         gap: 70px;
-        
+
     }
-    .About-video{
+
+    .About-video {
         width: 100%;
     }
-    .About-h3{
+
+    .About-h3 {
         width: 100%;
         text-align: center;
     }
-    .About-p{
+
+    .About-p {
         width: 100%;
     }
 }
+
 @media (max-width:725px) {
-    .Form{
+    .Form {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
     }
-    .Form-h3{
+
+    .Form-h3 {
         font-size: 2rem;
     }
-    .Form-span{
+
+    .Form-span {
         font-size: 1.2rem;
     }
 }
 
 @media (max-width:700px) {
-    .Header{        
+    .Header {
         width: 100%;
         min-height: 10vh;
         display: flex;
@@ -968,25 +994,29 @@ label,
         align-items: center;
         position: relative;
     }
-    .Header-nav{
+
+    .Header-nav {
         position: absolute;
         top: -10%;
         right: 10%;
     }
-    .Header-ul{
+
+    .Header-ul {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
     }
-    .Header-li{
-        
+
+    .Header-li {
+
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: end;
     }
-    .Header-btn{
+
+    .Header-btn {
         width: 100%;
         min-height: 10vh;
         display: flex;
@@ -994,7 +1024,8 @@ label,
         justify-content: center;
         align-items: end;
     }
-    .Header-btn-btn{
+
+    .Header-btn-btn {
         font-size: 0.rem;
     }
 
@@ -1033,20 +1064,21 @@ label,
         width: 95;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
-    .Header-ul{
-        
-             width: 100px;
+
+    .Header-ul {
+
+        width: 100px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: end;
         align-items: center;
         gap: 2px;
 
-        
-       
+
+
     }
 
     .Sobremi-p {
@@ -1058,16 +1090,17 @@ label,
         display: grid;
         grid-template-columns: repeat(2, 2fr);
     }
-    .Skills-div{
+
+    .Skills-div {
         min-width: 35px;
         overflow: hidden;
         border-radius: 20%;
     }
 
     .Header-div {
-        
+
         width: 30%;
-    
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -1075,34 +1108,39 @@ label,
         background-color: black;
 
     }
-    .Header-picture{
-        
-        width: 60%;
+
+    .Header-picture {
+
+        width: 90%;
         min-height: 30px;
         padding: 10px;
         border-radius: 25%;
         background-color: var(--color-gama-sun);
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
 
     .Header-btn {
         display: flex;
-        flex-flow: row ;
+        flex-flow: row;
         justify-content: center;
         align-content: center;
-        
+
     }
-    .Header-btn-btn{
-        font-size: 0.6rem;
+
+    .Header-btn-btn {
+        font-size: 0.8rem;
+
     }
-    .bi{
-        
-        width: 10px;
+
+    .bi {
+
+        width: 15px;
     }
-    .Main{
+
+    .Main {
         margin: 50px auto;
         width: 100%;
         min-height: 30vh;
@@ -1111,22 +1149,27 @@ label,
         justify-content: center;
         align-items: center;
     }
-   .Main-h2{
-    font-size: 1.5rem;
-   }
-    .Form-h2{
-        font-size: 2.5rem;
-    }
-    .Form-h3{
+
+    .Main-h2 {
         font-size: 1.5rem;
     }
-    .Form-span{
+
+    .Form-h2 {
+        font-size: 2.5rem;
+    }
+
+    .Form-h3 {
+        font-size: 1.5rem;
+    }
+
+    .Form-span {
         font-size: 0.8rem;
     }
 
 }
-@media (max-width:400px){
-    .Header{        
+
+@media (max-width:400px) {
+    .Header {
         width: 100%;
         min-height: 10vh;
         display: flex;
@@ -1135,19 +1178,22 @@ label,
         align-items: center;
         position: relative;
     }
-    .Header-nav{
+
+    .Header-nav {
         position: absolute;
         top: -10%;
         right: 10%;
     }
-    .Header-ul{
+
+    .Header-ul {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
     }
-    .Header-btn{
-        
+
+    .Header-btn {
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -1156,7 +1202,8 @@ label,
         width: 60%;
         min-height: 10vh;
     }
-    .Main{
+
+    .Main {
         width: 100%;
         min-height: 30vh;
         display: flex;
@@ -1164,25 +1211,37 @@ label,
         justify-content: center;
         align-items: center;
     }
-    
-        #bg-video{
-            width: 100%;
-            height: 30vh;
-        }
+    .Main-section{
+        width: 80%;
+        
+    }
+    .Main-h2{
+       
+        width: 100%;
+    }
 
-        .Sobremi-div{
-            gap: 20px;
-        }
-        .Sobremi-h2{
-            font-size: 2.5rem;
-        }
-        .Sobremi-picture{
-            width: 100%;
-        }
-    
+    #bg-video {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .Sobremi-div {
+        gap: 20px;
+    }
+
+    .Sobremi-h2 {
+        font-size: 2.5rem;
+    }
+
+    .Sobremi-picture {
+        margin-top: 50px;
+        width: 100%;
+    }
+
 }
-@media (max-width:300px){
-    .Sobremi-picture{
+
+@media (max-width:300px) {
+    .Sobremi-picture {
         width: 200px;
         min-height: 20vh;
     }
