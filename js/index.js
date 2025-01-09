@@ -34,3 +34,38 @@ prev.addEventListener(`click`,()=>{
 })
 
 
+
+const gridDvis = document.querySelectorAll(`.Sobremi-efect`)
+
+console.log(gridDvis)
+
+
+let options = {
+    threshold : [0.1]
+}
+
+
+let observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach((entry)=>{
+        let{isIntersecting , target}=entry
+
+            if (isIntersecting){
+                target.classList.add(`isVisible`)
+            }
+
+    })
+},options)
+
+gridDvis.forEach((_ , i)=>{
+    observer.observe(gridDvis[i])
+})
+
+const AboutEfect = document.querySelectorAll(`.About-efect`)
+
+console.log(gridDvis)
+
+
+
+
+

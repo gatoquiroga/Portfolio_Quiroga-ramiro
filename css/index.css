@@ -666,7 +666,7 @@ label,
 
 .Form {
     width: 100%;
-    min-height: 40vh;
+    min-height: 60vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -791,6 +791,22 @@ label,
     background-color: #d2741b;
 }
 
+.Footer {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+}
+
+.Footer-p {
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
 @media (max-width:1900px) {
     .Form-izq {
         font-size: 1rem;
@@ -838,6 +854,11 @@ label,
 
     .About-p {
         font-size: 1.3rem;
+    }
+    .Footer-p {
+        font-size: 0.8rem;
+        font-weight: 700;
+    
     }
 }
 
@@ -941,6 +962,7 @@ label,
 
     .Sobremi-picture {
         width: 60%;
+        min-height: 60vh;
     }
 
     .About {
@@ -964,6 +986,20 @@ label,
     .About-p {
         width: 100%;
     }
+    .Main-section{
+        margin-top: 100px;
+        
+        
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Sobremi-div{
+        margin-top: 200px;
+    }
+   
 }
 
 @media (max-width:725px) {
@@ -982,6 +1018,28 @@ label,
     .Form-span {
         font-size: 1.2rem;
     }
+    .Footer-p {
+        font-size: 0.4rem;
+        font-weight: 700;
+    
+    }
+    .Sobremi-efect{
+        min-height: 200px;
+        opacity: 1;
+        /*filter: blur(500px);*/
+       /* transform: rotate(60deg);*/
+        
+        transform: translateX();
+    
+    }
+    
+    .isVisible{
+        opacity: 1;
+        /*transform: rotate(0deg);*/
+        
+        /*filter: blur(0px);*/
+        transform: translateX(0);
+    }
 }
 
 @media (max-width:700px) {
@@ -993,6 +1051,7 @@ label,
         justify-content: space-around;
         align-items: center;
         position: relative;
+        
     }
 
     .Header-nav {
@@ -1023,6 +1082,7 @@ label,
         flex-flow: row nowrap;
         justify-content: center;
         align-items: end;
+        border-bottom: 0.4px solid white
     }
 
     .Header-btn-btn {
@@ -1031,6 +1091,23 @@ label,
 
     .Header-svg {
         width: 15px;
+    }
+    .Header-div{
+       display: flex;
+       flex-flow: row nowrap;
+       justify-content: center;
+       align-items: center;
+        width: 30%;
+        max-height: 5px;
+        background-color: transparent;
+    }
+    .Header-picture{
+        
+        width: 60%;
+        min-height: 5vh;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: var(--color-gama-sun);
     }
 
     .Skills-grid {
@@ -1045,7 +1122,9 @@ label,
         justify-content: center;
         align-items: center;
     }
-
+    .Sobremi-h2{
+        margin-top:110px ;
+    }
     .Sobremi-p {
 
         font-size: 0.6rem;
@@ -1056,6 +1135,10 @@ label,
         width: 50%;
         box-sizing: border-box;
         font-size: 2rem;
+    }
+    .Sobremi-efect{
+        
+        transform:  none;
     }
 }
 
@@ -1124,7 +1207,7 @@ label,
 
     .Header-btn {
         display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
         justify-content: center;
         align-content: center;
 
@@ -1149,9 +1232,12 @@ label,
         justify-content: center;
         align-items: center;
     }
+   
 
     .Main-h2 {
         font-size: 1.5rem;
+        
+        
     }
 
     .Form-h2 {
@@ -1211,16 +1297,18 @@ label,
         justify-content: center;
         align-items: center;
     }
-    .Main-section{
-       
+
+    .Main-section {
+
         width: 80%;
         max-height: 30vh;
         display: flex;
-        
-        
+
+
     }
-    .Main-h2{
-       font-size: 2rem;
+
+    .Main-h2 {
+        font-size: 2rem;
         width: 100%;
     }
 
@@ -1240,7 +1328,8 @@ label,
     .Sobremi-h2 {
         font-size: 2rem;
     }
-    .Sobremi-span{
+
+    .Sobremi-span {
         font-size: 1rem;
     }
 
@@ -1250,7 +1339,8 @@ label,
         margin: auto;
         width: 100%;
     }
-    .About-h3{
+
+    .About-h3 {
         font-size: 1.8rem;
     }
 
@@ -1262,3 +1352,22 @@ label,
         min-height: 20vh;
     }
 }
+
+.Sobremi-efect{
+    min-height: 200px;
+    opacity: 0.1;
+    /*filter: blur(500px);*/
+   /* transform: rotate(60deg);*/
+    transition: all 3s ease;
+    transform: translateX(-200px);
+
+}
+
+.isVisible{
+    opacity: 1;
+    /*transform: rotate(0deg);*/
+    
+    /*filter: blur(0px);*/
+    transform: translateX(0px);
+}
+
