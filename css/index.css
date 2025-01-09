@@ -1176,6 +1176,9 @@ label,
         .Sobremi-h2{
             font-size: 2.5rem;
         }
+        .Sobremi-picture{
+            width: 100%;
+        }
     
 }
 @media (max-width:300px){
