@@ -54,6 +54,15 @@ svg {
     --color-about-principal: rgb(168, 159, 142);
 
 
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+
+
 
 }
 
@@ -105,7 +114,7 @@ label,
     justify-content: space-evenly;
     align-items: center;
     margin-top: 10px;
-   
+
 
 
 
@@ -148,7 +157,7 @@ label,
 
 .Header-nav {
 
-
+    
     width: 10%;
     display: flex;
     flex-flow: row nowrap;
@@ -157,25 +166,33 @@ label,
 }
 
 .Header-ul {
-
+    width: 100%;
+    min-height: 40px;
+    
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+
     gap: 20px;
+}
+.bi{
+    width: 40px;
+    min-height: 30px;
 }
 
 
+
 .Main {
-    width: 100%;    
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: end;
     align-items: center;
-    color: var(--color-gama-snowWhite);    
-    min-height: 70vh;
-    position:relative;
-        /*background-image: url(../assets/fondos/desk-4334575_1280.jpg);
+    color: var(--color-gama-snowWhite);
+    min-height: 80vh;
+    position: relative;
+    /*background-image: url(../assets/fondos/desk-4334575_1280.jpg);
     height: 500px;
     
     background-position: center;
@@ -185,11 +202,11 @@ label,
 #bg-video {
     width: 100%;
     height: 100%;
-   
+
     object-fit: cover;
-    
+
     top: 60%;
-    
+
     position: absolute;
     z-index: -1;
     transform: translate(-50%, -50%);
@@ -197,13 +214,10 @@ label,
     top: 60%;
     left: 50%;
 }
-.Main-video{
-    
-   
-}
-.Main-source{
-  
-}
+
+.Main-video {}
+
+.Main-source {}
 
 
 
@@ -230,15 +244,16 @@ label,
     border-radius: 50px;
     inline-size: auto;
     padding: 20px;
-    
-    
-    
+
+
+
 
 
 
 
 }
-.Main-btn{
+
+.Main-btn {
     width: 100%;
     min-height: 10vh;
     display: flex;
@@ -246,19 +261,20 @@ label,
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    
-    
-     color: var(--color-gama-sun);
-    
-      
-      
-     
-     
+
+
+    color: var(--color-gama-sun);
+
+
+
+
+
 }
-.Main-svg{
-    
-    width:50px ;
-    
+
+.Main-svg {
+
+    width: 50px;
+
 }
 
 .Logo-show {
@@ -280,7 +296,7 @@ label,
 }
 
 .logo {
-    display: none ;
+    display: none;
     background-color: var(--color-secundario-blueElectric);
     flex-flow: row nowrap;
     justify-content: center;
@@ -294,13 +310,14 @@ label,
     width: 100%;
     height: 1000vh;
     background: var(--color-gama-sun) no-repeat center center;
-    animation: fadeInOut 5s forwards;
+    animation: fadeInOut 3s forwards;
+
 
 }
 
 @keyframes fadeInOut {
     0% {
-        opacity: 0;
+        opacity: 1;
     }
 
     10% {
@@ -379,27 +396,28 @@ label,
     text-align: start;
     color: var(--color-gama-sun);
     width: 50%;
-    min-height: 20vh;
+    min-height: 5vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: end;
-    
-    
+
+
+
 
 }
 
 .Skills {
+
     width: 80%;
-    min-height: 20vh;
-    margin: 0px auto;
+    min-height: 10vh;
+
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 20px;
-    
+
 }
 
 .Skills-grid {
@@ -415,7 +433,7 @@ label,
 }
 
 .Skills-div {
-   width: 100%;
+    width: 100%;
     min-height: 3vh;
     border: 3px solid var(--color-gama-sun);
     border-radius: 50px;
@@ -426,237 +444,594 @@ label,
     margin: auto;
     padding: 20px;
 }
-.Skills-div:hover{
-    .Skills-svg,.Skills-h4{
+
+.Skills-div:hover {
+
+    .Skills-svg,
+    .Skills-h4 {
         transform: scale(1.17);
-        
+
     }
-    
+
 }
 
 .Skills-svg {
     width: 20%;
 }
-.Banner{
-    background-image: url(../assets/Imagen\ de\ WhatsApp\ 2024-12-23\ a\ las\ 19.29.32_86077157.webp);
-   background-attachment: fixed;
-    background-position: right;
-     background-repeat: no-repeat;
-      background-size: contain;
-   margin: 7.5rem auto;
-   /*background-color: rgba(128, 128, 128, 0.176);*/
-   width: 100%;
-   min-height: 80vh;
-   
-   
-   object-fit: cover;
-  
-  
-}
 
-.Sobremi{
-   
+.Banner {
+    background-image: url(../assets/Imagen\ de\ WhatsApp\ 2024-12-23\ a\ las\ 19.29.32_86077157.webp);
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin: 7.5rem auto;
     /*background-color: rgba(128, 128, 128, 0.176);*/
-    width: 90%;
-    max-height: 80vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    ;
-    border-radius: 10px;
-    position: relative;
-    background-color: rgba(14, 14, 14, 0.673);
-    border-radius: 5%;
-    
-   
-    
-   
- 
+    width: 100%;
+    min-height: 80vh;
+
+
+    object-fit: cover;
+
 
 }
-.Sobremi-h3{
-    font-size: 3rem;   
-    color: var(--color-gama-sun);
+
+.Sobremi-h3 {
+    font-size: 3rem;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     top: 5%;
     left: 5%;
     font-weight: 300;
- 
-   
-}
-.Sobremi-p{
-    
-    width: 100%;
-    min-height: 40vh;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.5rem;
-    background-color: rgba(248, 120, 0, 0.721);
-    padding: 3.125rem;
-    border-radius: 20px;
-    
-    
 
-    
-   
+
+
 }
-.Sobremi-span{
-    font-size: 2rem;
+
+.Sobremi {
+
+    margin: 7.5rem auto;
+    /*background-color: rgba(128, 128, 128, 0.176);*/
+    width: 80%;
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-radius: 5px;
+
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+
+
+
+
+
+}
+
+.Sobremi-h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.Sobremi-p {
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 700;
+
+
+    color: white;
+
+    border-radius: 5px;
+
+
+    background-color: red;
+
+}
+
+.Sobremi-naranja {
     color: var(--color-gama-sun);
 }
-.Sobremi-div{
+
+.Sobremi-span {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.Sobremi-div {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.Sobremi-rami {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sobremi-picture {
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.Sobremi-img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+.Sobremi-orange {
+    color: var(--color-gama-sun);
+}
+
+.About {
+
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-video {
+    width: 50%;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+
+}
+
+.About-Video-cont {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.About-div {
+
     width: 70%;
-    min-height: 80vh;
-    padding: 1.25rem;
+    min-height: 50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    color: gray;
+    text-align: justify;
+
+}
+
+.About-h3 {
+    width: 50%;
+    color: white;
+    font-size: 4rem;
+
+}
+
+.About-p {
+    width: 80%;
+    font-size: 1.5rem;
+
+}
+
+.About-img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+
+.Form {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    ;
+}
+
+.Form-izq {
+
+    min-height: 30vh;
+    width: 50%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    
-    /*background-color: rgba(176, 172, 172, 0.176) ;*/
-    
-    
-    color: var(--color-gama-snowWhite);
-    position: absolute;
-    
-    top: 0%;
-    left:0;
-    
-    
-   
-   
-}
-.Sobremi-picture{
-    width:90%;
-    border-radius: 5%;
-    
-}
-.Sobremi-img{
-    object-fit: cover;
-    border-radius: 10%;
-    
-    
+    gap: 20px;
 }
 
-@media (max-width: 1450px){
-    .Sobremi{
+.Form-der {
+
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Form-h2 {
+    color: var(--color-gama-sun);
+    font-size: 3.5rem;
+}
+
+.Form-svg {
+    min-width: 30px;
+    width: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Form-p {}
+
+.Form-div {
+
+    width: 50%;
+    gap: 20px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.Form-div--der {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.Form-h3 {
+    font-size: 2rem;
+    text-align: start;
+}
+
+.Form-span {
+    font-size: 1.5rem;
+}
+
+.Form-form {
+
+
+    border-radius: 8px;
+
+    max-width: 60%;
+    width: 100%;
+}
+
+
+
+.Form-input,
+.Form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: gray;
+    background-color: rgb(52, 51, 51);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Form-input:focus,
+.Form-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.Form-btn {
+
+    border: solid 2px var(--color-gama-sun);
+    color: #fff;
+    padding: 10px 15px;
+
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.Form-btn:hover {
+    background-color: #d2741b;
+}
+@media (max-width:1900px){
+    .Form-izq{
+        font-size: 1rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+    }
+    .Form-der{
+        margin: 50px auto;
+    }
+}
+@media (max-width: 1450px) {
+    .Sobremi {
         min-height: 70vh;
     }
-    .Banner{
+
+    .Banner {
         opacity: 0;
-       
+
     }
-    .Sobremi-div{
+
+    .Sobremi-div {
         width: 100%;
     }
-    .Skills{
-       
+
+    .Skills {
+
         width: 100%;
         display: flex;
         flex-flow: row wrap;
+        
+    }
+    .Skills-h3{
+        margin-top: 70px;
+    }
+    .About-h3{
+        font-size: 3rem;
+    }
+    .About-p{
+        font-size: 1.3rem;
     }
 }
 
-@media ( max-width:1000px){
-    .Skills-grid{
+@media (max-width:1122px) {
+    .Sobremi-p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:1000px) {
+    .Skills-grid {
         width: 70%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .Header-ul{
-       
+    .Skills-h3{
+        margin-bottom: 40px;
+    }
+
+    .Header-ul {
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        gap: 0px;
+        gap: 15px;
     }
-        .Header-li{
-            width: 50px;
-        }
 
-        .Header-div{
-            width: 100px;
-            
-        }
-        .Main-section--izq{
-            width: 50%;
-            box-sizing: border-box;
-            font-size: 3rem;
-        }
+    .Header-li {
+        width: 50px;
+        
+    }
+
+    .Header-div {
+        width: 100px;
+
+    }
+
+    .Main-section--izq {
+        width: 50%;
+        box-sizing: border-box;
+        font-size: 3rem;
+    }
+    .bi{
+        width: 20px;
+    }
+    .Form{
+        margin-top: 100px;
+        width: 90%;
+    }
+    .Form-izq{
+        font-size: 1rem;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: start;
+    }
+    .Form-btn{
+        width: 50%;
+    }
+}
+@media(max-width:800px){
+    .Form{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .About-p{
+        font-size: 1rem;
+    }
+    .Sobremi{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    .Sobremi-picture{
+        width: 60%;
+    }
+    .About{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        
+    }
+    .About-video{
+        width: 100%;
+    }
+    .About-h3{
+        width: 100%;
+        text-align: center;
+    }
+    .About-p{
+        width: 100%;
+    }
+}
+@media (max-width:725px) {
+    .Form{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Form-h3{
+        font-size: 2rem;
+    }
+    .Form-span{
+        font-size: 1.2rem;
+    }
 }
 
-@media ( max-width:700px){
-    .Header-ul{
-       
+@media (max-width:700px) {
+    .Header-ul {
+
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        
+
 
     }
-    .Header-svg{
-       
+    .Header-btn-btn{
+        font-size: 0.8rem;
     }
-    .Skills-grid{
+
+    .Header-svg {}
+
+    .Skills-grid {
         display: grid;
-    grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .Skills-h3{
+
+    .Skills-h3 {
         width: 100%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
     }
-   .Sobremi-p{
-    
-    font-size: 1rem;
-    
-   }
-   .Main-section--izq{
-    width: 50%;
-    box-sizing: border-box;
-    font-size: 2rem;
-}
+
+    .Sobremi-p {
+
+        font-size: 0.6rem;
+
+    }
+
+    .Main-section--izq {
+        width: 50%;
+        box-sizing: border-box;
+        font-size: 2rem;
+    }
 }
 
-@media ( max-width:525px ) { 
-    .Header{
-       
+@media (max-width:525px) {
+    .Header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
     }
-    .Sobremi-p{
-    
-        font-size: 0.8rem;
+
+    .Sobremi-p {
+
+        font-size: 0.4rem;
     }
-    .Skills-grid{
-            display: grid;
+
+    .Skills-grid {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .Header-div{
-        
-        max-height: 20px;
-        
-        margin: auto;
+
+    .Header-div {
+
+        width: 15%;
+
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
 
     }
-    .Header-btn{
+
+    .Header-btn {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-content: center;
     }
-    
+    .Form-h2{
+        font-size: 2.5rem;
+    }
+    .Form-h3{
+        font-size: 1.5rem;
+    }
+    .Form-span{
+        font-size: 0.8rem;
     }
 
+}

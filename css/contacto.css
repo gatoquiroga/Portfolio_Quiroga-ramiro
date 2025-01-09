@@ -306,15 +306,7 @@ label,
         
     }
 }
-@media (max-width:1260px){
-    .Contacto{
-        min-width: 600px;
-        
-    }
-    .Contacto-container{
-       
-    }
-}
+
 @media (max-width:1260px){
     .Contacto{
         min-width: 100%;
@@ -324,9 +316,43 @@ label,
        
     }
 }
-@media ( max-width:1050px){
+@media ( max-width:700px){
+    .Contacto{
+        width: 90%;
+    }
     .Main-contacto{
         background-color: #243838;
         gap: 5px;
+    }
+    .Contacto-info{
+        font-size: 0.2rem;
+    }
+}
+
+@media ( max-width:700px){
+    .Contacto-info{
+        font-size: 1rem;
+    }
+    .Main-contacto{
+        width: 90%;
+        gap: 0px;
+        margin: 20px auto;
+    }
+    .Hero{
+        width: 100%;
+        margin-top: 80px;
+        min-height: 20vh;
+    }
+}
+@media ( max-width:470px){
+    .Contacto-info{
+        font-size: 0.8rem;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .Contacto-p{
+        font-size: 0.4rem;
+        text-align: start;
+        inline-size: auto;
     }
 }
