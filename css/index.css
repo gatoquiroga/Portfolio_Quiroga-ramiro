@@ -1205,24 +1205,32 @@ label,
 
     .Main {
         width: 100%;
-        min-height: 30vh;
+        min-height: 40vh;
         display: flex;
         flex-flow: colum nowrap;
         justify-content: center;
         align-items: center;
     }
     .Main-section{
+       
         width: 80%;
+        max-height: 30vh;
+        display: flex;
+        
         
     }
     .Main-h2{
-       
+       font-size: 2rem;
         width: 100%;
     }
 
     #bg-video {
         width: 100%;
-        height: 30vh;
+        height: 50vh;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .Sobremi-div {
@@ -1230,7 +1238,10 @@ label,
     }
 
     .Sobremi-h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    .Sobremi-span{
+        font-size: 1rem;
     }
 
     .Sobremi-picture {
