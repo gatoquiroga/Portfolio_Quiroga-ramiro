@@ -35,9 +35,9 @@ prev.addEventListener(`click`,()=>{
 
 
 
-const gridDvis = document.querySelectorAll(`.Sobremi-efect`)
+const Sobremi = document.querySelectorAll(`.Sobremi-efect`)
 
-console.log(gridDvis)
+console.log(Sobremi)
 
 
 let options = {
@@ -57,13 +57,13 @@ let observer = new IntersectionObserver((entries)=>{
     })
 },options)
 
-gridDvis.forEach((_ , i)=>{
-    observer.observe(gridDvis[i])
+Sobremi.forEach((_ , i)=>{
+    observer.observe(Sobremi[i])
 })
 
 const AboutEfect = document.querySelectorAll(`.About-efect`)
 
-console.log(gridDvis)
+console.log(Sobremi)
 
 
 
