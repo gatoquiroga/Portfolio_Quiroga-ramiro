@@ -148,12 +148,11 @@ label,
 }
 
 .Main-contacto {
-    background-color: rgba(43, 32, 32, 0.469);
+    
     width: 100%;
     gap: 20px;
-    min-height: 55vh;
-
-    margin: 3.125rem auto;
+    min-height: 40vh;  
+    margin:100px auto;
     box-shadow: 0 4px 8px rgba(21, 13, 13, 0.1), 0 6px 20px rgba(13, 8, 8, 0.1);
 
 
@@ -186,7 +185,7 @@ label,
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
+   
 
 
 
@@ -206,23 +205,33 @@ label,
 
 
 .Contacto-container {
-    width: 50%;
+    background-color: rgba(43, 32, 32, 0.469);
+    width: 45%;
+    min-height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center ;
+    align-items: center;   
+    margin: auto;
 
-    margin: 0 auto;
+   
     padding: 20px;
-    color: white
+    color: white;
+    text-align: center;
+    border-radius: 15px
 }
 
 .Contacto {
-
+    
+    width: 100%;
+    min-height: 30vh;
     padding: 50px 0;
-
     border-radius: 10px;
 
 
 }
 
-.Contacto h2 {
+.Contacto-h2 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.5em;
@@ -236,48 +245,11 @@ label,
 
 .Contacto-p {
     margin: 5px 0;
-    font-size: 1.5rem;
-}
-
-.Contacto-form {
-
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.Contacto-group {
-    margin: auto;
-    margin-bottom: 15px;
-    width: 50%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+    font-size: 2rem;
+    text-align: start;
 }
 
 
-
-.Contacto-input {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.Contacto-btn {
-    padding: 10px 20px;
-    background-color: var(--color-gama-sun);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.Contacto-btn:hover {
-    background-color: #e36323;
-}
 
 .fade-in-image {
     opacity: 0;
@@ -294,6 +266,10 @@ label,
 .flash-image {
     opacity: 0;
     animation: flash 1s ease-in-out forwards;
+}
+.flash-der {
+    opacity: 0;
+    animation: flashDer 1s ease-in-out forwards;
 }
 
 @keyframes flash {
@@ -312,6 +288,42 @@ label,
         transform: translateY(0px);
     }
 }
+@keyframes flashDer {
+    0% {
+        opacity: 0.1;
+        transform: translateX(400px);
+    }
+    50%{
+        opacity: 0.5;
+    }
+
+
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.Main-contacto {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    
+}
+
+.Hero {
+    width: 100%;
+    max-height: 30vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
 
 
 @media (max-width:1759px) {
@@ -342,24 +354,43 @@ label,
 }
 
 @media (max-width:1260px) {
-    .Hero{
-        width: 70%;
-    }
-    .Hero-img{
-        width: 80%;
-    }
+
 }
 
 
 @media (max-width:800px) {
+    .Main-contacto{
+        
+    }
     .Contacto-p{
         font-size: 0.9rem;
+    }
+    .Hero{
+        width: 100%;
+    }
+    .Hero-picture{
+        width: 80%;
+        
     }
    
 }
 
 @media (max-width:700px) {
- 
+ .Main-contacto{
+   
+ }
+ .Hero-picture{
+    width: 60%;
+    margin-top: -500px;
+ }
+ .Contacto{
+    width: 100%;
+    min-height: 30vh;
+    margin-top: -500px;
+ }
+ .Contacto-container{
+    width: 60%;
+ }
 }
 
 @media (max-width:470px) {
