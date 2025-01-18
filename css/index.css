@@ -147,7 +147,9 @@ label,
     gap: 30px;
 
 }
-
+.Header-btn-btn{
+    font-size: 1.5rem;
+}
 .Header-btn-li:hover {
     color: var(--color-gama-sun);
     transform: scale(1.10);
@@ -174,6 +176,10 @@ label,
     align-items: center;
 
     gap: 20px;
+}
+.Header-li:hover{
+    transform: scale(1.1);
+    color: var(--color-gama-sun);
 }
 
 .bi {
@@ -273,8 +279,18 @@ label,
 
 .Main-svg {
 
-    width: 50px;
+    width: 30px;
 
+}
+.Flecha{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: 20px;
 }
 
 .Logo-show {
@@ -392,10 +408,12 @@ label,
 
 
 .Skills-h3 {
+    width: 100%;
+
     font-size: 3rem;
     text-align: start;
     color: var(--color-gama-sun);
-    width: 50%;
+   
     min-height: 5vh;
     display: flex;
     flex-flow: row nowrap;
@@ -408,7 +426,7 @@ label,
 
 .Skills {
 
-    width: 80%;
+    width: 100%;
     min-height: 10vh;
 
 
@@ -926,9 +944,15 @@ label,
     .Form-btn {
         width: 50%;
     }
+    .Flecha{
+        font-size: 1rem;
+    }
 }
 
 @media(max-width:800px) {
+    .Header-btn-btn{
+        font-size: 1rem;
+    }
     .Main {
         width: 100%;
         min-height: 50vh;
@@ -1065,16 +1089,20 @@ label,
         min-height: 10vh;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         position: relative;
+        
+        margin-top: 0;
 
     }
 
     .Header-nav {
+        
         position: absolute;
         top: -10%;
-        right: 10%;
+        right: 5%;
+        
     }
 
     .Header-ul {
@@ -1090,20 +1118,31 @@ label,
         flex-flow: column nowrap;
         justify-content: center;
         align-items: end;
+        
+        
     }
+   .bi{
+    width: 10px;
+   }
 
     .Header-btn {
-        width: 100%;
+        width: 40%;
         min-height: 10vh;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: start;
         align-items: end;
+        
+        position: absolute;
+        
+    }
+    .Header-btn-li{
         border-bottom: 0.4px solid white
     }
 
     .Header-btn-btn {
-        font-size: 0.rem;
+        font-size: 0.8rem;
+        
     }
 
     .Header-svg {
@@ -1122,11 +1161,14 @@ label,
 
     .Header-picture {
 
-        width: 60%;
+        width: 10%;
         min-height: 5vh;
         padding: 20px;
-        border-radius: 15px;
+        border-radius: 0 15px 15px 0;
         background-color: var(--color-gama-sun);
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .Skills-grid {
@@ -1179,21 +1221,24 @@ label,
 
 @media (max-width:525px) {
     .Header {
-        width: 95;
+        width: 100%;
+        min-height: 20vh;
+        
         display: flex;
         flex-flow: row nowrap;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
     }
 
     .Header-ul {
-
+        
         width: 100px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: end;
-        align-items: center;
+        align-items: end;
         gap: 2px;
+        
 
 
 
@@ -1223,13 +1268,13 @@ label,
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
 
     }
 
     .Header-picture {
 
-        width: 90%;
+        width: 15%;
         min-height: 30px;
         padding: 10px;
         border-radius: 25%;
@@ -1241,10 +1286,7 @@ label,
     }
 
     .Header-btn {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
+        
 
     }
 
@@ -1319,18 +1361,25 @@ label,
 @media (max-width:400px) {
     .Header {
         width: 100%;
-        min-height: 10vh;
+        min-height: 15vh;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
+        align-items: end;
         position: relative;
     }
 
     .Header-nav {
+       
+        width: 30%;
+        min-height: 10vh;
         position: absolute;
         top: -10%;
-        right: 10%;
+        right: 0%;
+        display: flex;
+        flex-flow: row  nowrap;
+        justify-content: center;
+        align-items: end;
     }
 
     .Header-ul {
@@ -1382,24 +1431,41 @@ label,
         justify-content: center;
         align-items: center;
     }
+    .Sobremi{
+        
+        width: 100%;
+        max-height: 10vh;
+        
+    }
 
     .Sobremi-div {
+        max-height: 80vh;
         gap: 20px;
     }
 
     .Sobremi-h2 {
         font-size: 2rem;
+        margin-top: 100px;
     }
 
     .Sobremi-span {
         font-size: 1rem;
+        max-height: 20vh;
     }
 
     .Sobremi-picture {
+        
+        width: 70%;
+        min-height: 50vh;
+        
+        
+    }
+    .Sobremi-img{
         width: 100%;
-        min-height: 300px;
-        margin: auto;
-        width: 100%;
+        height: 100%;
+    }
+    .About{
+        margin-top: 300px;
     }
 
     .About-h3 {
@@ -1439,10 +1505,7 @@ label,
 }
 
 @media (max-width:370px) {
-    .Sobremi-picture {
-        width: 200px;
-        min-height: 20vh;
-    }
+ 
 }
 
 .Sobremi-efect {
