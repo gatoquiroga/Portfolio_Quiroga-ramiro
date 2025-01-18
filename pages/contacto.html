@@ -15,6 +15,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/LOGO_RAMIRO.png" type="icono">
     <script src="js/index.js" defer></script>
 </head>
 
@@ -93,29 +99,13 @@
 
     <main class="Main-contacto">
         <section class="Hero">
-            <picture class="Hero-picture">
+            <picture class="Hero-picture flash-image">
                 <img src="../assets/3f3b6dd3449e2b8f1eec0015c0c6f956.jpg" alt="foto"
                     class="Hero-img">
             </picture>
         </section>
 
-        <!--<section class="Main-section">
-            <h3 class="Main-h3">Info.</h3>
-            <div class="Main-div">
-                <h2 class="Main-h2">Nombre: Ramiro quiroga </h2>/
-                <p class="Main-p"> 04/10/1993</p>
-            </div>
 
-            </div>
-            <div class="Main-div">
-
-                <h2 class="Main-h2">Email : quiroga_ramiro@hotmail.com </h2>/
-                <p class="Main-p"> Tel: +34 623586160</p>
-            </div>
-
-
-
-        </section>-->
 
         <section class="Contacto">
             <div class="Contacto-container">
@@ -124,19 +114,22 @@
                     <p class="Contacto-p"><strong>Nombre:</strong> Ramiro Quiroga</p>
                     <p class="Contacto-p"><strong>Email:</strong> quiroga_ramiro@hotmail.com</p>
                     <p class="Contacto-p"><strong>Teléfono:</strong> +34 623 586 160</p>
-                    <p class="Contacto-p"><strong>Ciudad:</strong>Valencia, España</p>
+                    <p class="Contacto-p"><strong>Ciudad:</strong> Valencia, España</p>
                 </div>
                 <form class="Contacto-form" action="submit_form.php" method="post">
-                    <div class="Contacto-group"> <label class="Contacto-label" for="name">Nombre:</label> <input class="Contacto-input"
-                            type="text" id="name" name="name" required> </div>
-                    <div class="Contacto-group"> <label class="Contacto-label" for="email">Email:</label> <input class="Contacto-input"
-                            type="email" id="email" name="email" required> </div>
+                    <div class="Contacto-group"> <label class="Contacto-label" for="name"></label> <input class="Contacto-input"
+                            type="text" id="name" name="name" required placeholder="Nombre"> </div>
+                    <div class="Contacto-group"> <label class="Contacto-label" for="email"></label> <input class="Contacto-input"
+                            type="email" id="email" name="email" required placeholder="Email"> </div>
                              <button class="Contacto-btn">Enviar</button>
                 </form>
             </div>
         </section>
 
     </main>
+    <footer class="Footer">
+        <p class="Footer-p">Hecho con mucho 🧡 por Ramiro quiroga 2025 </p>
+    </footer>
 </body>
 
 </html>
