@@ -147,9 +147,11 @@ label,
     gap: 30px;
 
 }
-.Header-btn-btn{
+
+.Header-btn-btn {
     font-size: 1.5rem;
 }
+
 .Header-btn-li:hover {
     color: var(--color-gama-sun);
     transform: scale(1.10);
@@ -177,7 +179,8 @@ label,
 
     gap: 20px;
 }
-.Header-li:hover{
+
+.Header-li:hover {
     transform: scale(1.1);
     color: var(--color-gama-sun);
 }
@@ -282,14 +285,15 @@ label,
     width: 30px;
 
 }
-.Flecha{
+
+.Flecha {
     width: 100%;
     min-height: 10vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-   
+
     margin-top: 20px;
 }
 
@@ -413,7 +417,7 @@ label,
     font-size: 3rem;
     text-align: start;
     color: var(--color-gama-sun);
-   
+
     min-height: 5vh;
     display: flex;
     flex-flow: row nowrap;
@@ -425,7 +429,7 @@ label,
 }
 
 .Skills {
-    
+
     width: 100%;
     min-height: 10vh;
 
@@ -445,7 +449,7 @@ label,
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    
+
 
 
 
@@ -462,7 +466,7 @@ label,
     align-items: center;
     margin: auto;
     padding: 20px;
-   
+
 }
 
 .Skills-div:hover {
@@ -686,7 +690,7 @@ label,
 
 
 .Form {
-    
+
     width: 80%;
     min-height: 60vh;
     margin: auto;
@@ -702,22 +706,22 @@ label,
         "wdth" 100,
         "YTLC" 500;
     ;
-    
+
 }
 
 .Form-izq {
-    
-    
+
+
     width: 50%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-   
+
 }
 
 .Form-der {
-    
+
     width: 50%;
     min-height: 30vh;
     display: flex;
@@ -831,6 +835,7 @@ label,
     font-weight: 700;
 
 }
+
 /*Medias queries */
 
 @media (max-width:1900px) {
@@ -955,15 +960,17 @@ label,
     .Form-btn {
         width: 50%;
     }
-    .Flecha{
+
+    .Flecha {
         font-size: 1rem;
     }
 }
 
 @media(max-width:800px) {
-    .Header-btn-btn{
+    .Header-btn-btn {
         font-size: 1rem;
     }
+
     .Main {
         width: 100%;
         min-height: 50vh;
@@ -1003,7 +1010,7 @@ label,
     }
 
     .Sobremi-picture {
-       
+
         width: 40%;
         min-height: 80vh;
     }
@@ -1105,17 +1112,17 @@ label,
         justify-content: center;
         align-items: center;
         position: relative;
-        
+
         margin-top: 0;
 
     }
 
     .Header-nav {
-        
+
         position: absolute;
         top: -10%;
         right: 5%;
-        
+
     }
 
     .Header-ul {
@@ -1131,12 +1138,13 @@ label,
         flex-flow: column nowrap;
         justify-content: center;
         align-items: end;
-        
-        
+
+
     }
-   .bi{
-    width: 10px;
-   }
+
+    .bi {
+        width: 10px;
+    }
 
     .Header-btn {
         width: 40%;
@@ -1145,17 +1153,18 @@ label,
         flex-flow: row nowrap;
         justify-content: start;
         align-items: end;
-        
+
         position: absolute;
-        
+
     }
-    .Header-btn-li{
-        border-bottom: 0.4px solid white
+
+    .Header-btn-li {
+       
     }
 
     .Header-btn-btn {
         font-size: 0.8rem;
-        
+
     }
 
     .Header-svg {
@@ -1207,30 +1216,32 @@ label,
         min-height: 50vh;
         margin-bottom: 150px;
     }
+
     .Sobremi-p {
 
-    font-size: 0.6rem;
+        font-size: 0.6rem;
 
-}
+    }
 
-.Main-section--izq {
-    width: 50%;
-    box-sizing: border-box;
-    font-size: 2rem;
-    margin-bottom: 50px;
-}
+    .Main-section--izq {
+        width: 50%;
+        box-sizing: border-box;
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
 
-.Sobremi-efect {
+    .Sobremi-efect {
 
-    transform: none;
-}
+        transform: none;
+    }
 
-.Form {
-    width: 100%;
-}
-.Flecha{
-    margin-bottom: 40px;
-}
+    .Form {
+        width: 100%;
+    }
+
+    .Flecha {
+        margin-bottom: 40px;
+    }
 
 }
 
@@ -1240,7 +1251,7 @@ label,
     .Header {
         width: 100%;
         min-height: 20vh;
-        
+
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
@@ -1248,14 +1259,14 @@ label,
     }
 
     .Header-ul {
-        
+
         width: 100px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: end;
         align-items: end;
         gap: 2px;
-        
+
 
 
 
@@ -1302,10 +1313,7 @@ label,
         align-items: center;
     }
 
-    .Header-btn {
-        
-
-    }
+    .Header-btn {}
 
     .Header-btn-btn {
         font-size: 0.8rem;
@@ -1387,14 +1395,14 @@ label,
     }
 
     .Header-nav {
-       
+
         width: 30%;
         min-height: 10vh;
         position: absolute;
         top: -10%;
         right: 0%;
         display: flex;
-        flex-flow: row  nowrap;
+        flex-flow: row nowrap;
         justify-content: center;
         align-items: end;
     }
@@ -1448,11 +1456,12 @@ label,
         justify-content: center;
         align-items: center;
     }
-    .Sobremi{
-        
+
+    .Sobremi {
+
         width: 100%;
         max-height: 10vh;
-        
+
     }
 
     .Sobremi-div {
@@ -1466,22 +1475,28 @@ label,
     }
 
     .Sobremi-span {
-        font-size: 1rem;
+        width: 70%;
+        margin: auto;
+        
+        font-size: 1.2rem;
         max-height: 20vh;
+        text-align: center;
     }
 
     .Sobremi-picture {
-        
+
         width: 70%;
         min-height: 50vh;
-        
-        
+
+
     }
-    .Sobremi-img{
+
+    .Sobremi-img {
         width: 100%;
         height: 100%;
     }
-    .About{
+
+    .About {
         margin-top: 300px;
     }
 
@@ -1516,14 +1531,15 @@ label,
 
     .Form-span {
         width: 80%;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .Form-svg{
+        width: 5px;
     }
 
 }
 
-@media (max-width:370px) {
- 
-}
+@media (max-width:370px) {}
 
 /*arrancan efectos */
 .Sobremi-efect {
