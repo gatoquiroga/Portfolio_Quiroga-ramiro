@@ -103,7 +103,8 @@ label,
 .Proyectos {
     
     margin:40px auto;
-    width:50%;
+    width:60%;
+    
     display: grid;
     grid-template-columns: repeat(2,2fr);
     gap: 2rem;
@@ -114,21 +115,24 @@ label,
 
 .Proyectos-div {
    
-    
+    border: 2px solid;
     border-radius: 8px;
     padding: 1rem;
     width: 100%;
     margin: auto;   
-    min-height: 40vh;
+    min-height: 50vh;
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.79) 1.95px 1.95px 2.6px;
+    gap: 60px;
+
     
 }
 .Proyectos-picture{
-    width: 80%;
+    width: 100%;
     max-height: 20vh;
 }
 
@@ -136,14 +140,14 @@ label,
     
     border-radius: 8px;
     object-fit: cover;
-    border: 5px solid rgba(122, 121, 121, 0.641);
+    border: 2px solid rgba(122, 121, 121, 0.641);
     
 }
 
 .Proyectos-h2{
     margin: 100px auto;
     font-size: 2rem;
-    box-shadow: .7rem .7rem .7rem var(--color-gama-sun);
+    box-shadow: .2rem .4rem .4rem var(--color-gama-sun);
     border-radius: 15px;
     padding: 10px;
 }
@@ -152,6 +156,8 @@ label,
     transform: scale(1.1);
     background-color: rgba(120, 119, 119, 0.135);
     transition: all 1s ease;
+    border: 2px solid var(--color-gama-sun);
+    box-shadow: var(--color-gama-sun) 1.95px 1.95px 2.6px;
     
     
     
@@ -173,4 +179,31 @@ label,
     .Proyectos{
         grid-template-columns: repeat(1,1fr);
     }
+}
+
+.Proyectos-efect {
+    min-height: 200px;
+    opacity: 0.1;
+    /*filter: blur(500px);*/
+    /* transform: rotate(60deg);*/
+    transition: all 3s ease;
+    transform: translateX(-200px);
+
+}
+.Proyectos-efect--der {
+    min-height: 200px;
+    opacity: 0.1;
+    /*filter: blur(500px);*/
+    /* transform: rotate(60deg);*/
+    transition: all 3s ease;
+    transform: translateX(400px);
+
+}
+
+.isVisible {
+    opacity: 1;
+    /*transform: rotate(0deg);*/
+
+    /*filter: blur(0px);*/
+    transform: translateX(0px);
 }
