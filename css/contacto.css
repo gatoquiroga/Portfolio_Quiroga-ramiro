@@ -205,7 +205,7 @@ label,
 
 
 .Contacto-container {
-    background-color: rgba(43, 32, 32, 0.469);
+    
     width: 45%;
     min-height: 40vh;
     display: flex;
@@ -232,14 +232,16 @@ label,
 }
 
 .Contacto-h2 {
-    text-align: center;
+    width: 100%;
+    text-align: start;
     margin-bottom: 30px;
     font-size: 2.5em;
     color: var(--color-gama-sun);
 }
 
 .Contacto-info {
-    text-align: center;
+    width: 100%;
+    text-align: start;
     margin-bottom: 30px;
 }
 
