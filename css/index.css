@@ -425,7 +425,7 @@ label,
 }
 
 .Skills {
-
+    
     width: 100%;
     min-height: 10vh;
 
@@ -445,6 +445,7 @@ label,
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+    
 
 
 
@@ -461,6 +462,7 @@ label,
     align-items: center;
     margin: auto;
     padding: 20px;
+   
 }
 
 .Skills-div:hover {
@@ -684,8 +686,10 @@ label,
 
 
 .Form {
-    width: 100%;
+    
+    width: 80%;
     min-height: 60vh;
+    margin: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -698,26 +702,27 @@ label,
         "wdth" 100,
         "YTLC" 500;
     ;
+    
 }
 
 .Form-izq {
-
-    min-height: 30vh;
+    
+    
     width: 50%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+   
 }
 
 .Form-der {
-
-    width: 100%;
+    
+    width: 50%;
     min-height: 30vh;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
@@ -759,12 +764,12 @@ label,
 }
 
 .Form-h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: start;
 }
 
 .Form-span {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .Form-form {
@@ -830,15 +835,18 @@ label,
 
 @media (max-width:1900px) {
     .Form-izq {
+        min-height: 40vh;
         font-size: 1rem;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         gap: 40px;
     }
 
     .Form-der {
+        width: 50%;
+        min-height: 40vh;
         margin: 50px auto;
     }
 }
