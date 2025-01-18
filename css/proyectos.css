@@ -178,7 +178,28 @@ label,
 @media (max-width:667px){
     .Proyectos{
         grid-template-columns: repeat(1,1fr);
+        
     }
+    .Proyectos-div{
+        
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .Proyectos-picture{
+        width: 80%;
+    }.Proyectos-h3{
+        font-size: 1rem;
+    }
+    .Proyectos-p{
+        font-size: 0.8rem;
+    }
+
+
 }
 
 .Proyectos-efect {
