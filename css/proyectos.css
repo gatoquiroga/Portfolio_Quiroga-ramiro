@@ -97,9 +97,18 @@ label,
     display: block;
 }
 
+/* 
+proyectos.css
+reset
+variables
+main
+footer
+efectos
+*/
 
 
-
+/* The CSS code you provided is styling a section with the class name `.Proyectos`. Here's a breakdown
+of what each part of the code is doing: */
 .Proyectos {
     
     margin:40px auto;
@@ -175,6 +184,8 @@ label,
     color: var(--color-about-brownSugar);
 }
 
+
+/* medias queries */
 @media (max-width:667px){
     .Proyectos{
         grid-template-columns: repeat(1,1fr);

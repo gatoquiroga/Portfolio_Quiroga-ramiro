@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -98,6 +99,15 @@ label,
 }
 
 
+/* 
+index.css
+reset
+variables
+header
+main
+footer
+efectos
+*/
 
 
 
@@ -152,6 +162,9 @@ label,
     font-size: 1.5rem;
 }
 
+/* clase "Header-btn-li" y aplica
+estilos cuando se pasa el cursor sobre él. En concreto, cambia el color del texto a una variable CSS personalizada
+(--color-gama-sun) y escala el elemento en 1,10 veces su tamaño original cuando se pasa el cursor sobre él. */
 .Header-btn-li:hover {
     color: var(--color-gama-sun);
     transform: scale(1.10);
@@ -316,7 +329,7 @@ label,
 }
 
 .logo {
-    display: none;
+    display: flex;
     background-color: var(--color-secundario-blueElectric);
     flex-flow: row nowrap;
     justify-content: center;
@@ -330,11 +343,15 @@ label,
     width: 100%;
     height: 1000vh;
     background: var(--color-gama-sun) no-repeat center center;
-    animation: fadeInOut 3s forwards;
+    animation: fadeInOut 1.5s forwards ;
 
 
 }
 
+/* El código anterior está definiendo una animación de fotogramas clave CSS llamada "fadeInOut". Esta animación comienza con un
+opacidad de 1 al 0%, mantiene esa opacidad hasta el 10%, luego permanece en una opacidad de 1 hasta el 90%, y
+finalmente se desvanece a una opacidad de 0 al 100%. Esta animación creará un efecto de desvanecimiento seguido
+por un efecto de fundido en un elemento al que se aplica. */
 @keyframes fadeInOut {
     0% {
         opacity: 1;
@@ -356,58 +373,7 @@ label,
 
 
 
-.Carrousel {
-    display: none;
-    width: 60%;
-    min-height: 80px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
 
-}
-
-.Carrousel-container {
-    width: calc(100% * 3);
-    min-height: 80px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    transform: all .10s ease;
-
-}
-
-.Carrousel-img {
-
-    object-fit: contain;
-    height: 31.25rem;
-}
-
-.Carrousel-arrow {
-    width: 48px;
-    height: 48px;
-
-    position: absolute;
-    top: calc(50% - 24px);
-    border-radius: 15%;
-    color: var(--color-primario--white);
-
-}
-
-.Next {
-    right: 0;
-
-}
-
-.Prev {
-    left: 0;
-}
-
-.Parallax {
-    width: 100%;
-    min-height: 50vh;
-
-}
 
 
 
@@ -837,6 +803,8 @@ label,
 }
 
 /*Medias queries */
+/* para distintis tipos de tamaños*/
+
 
 @media (max-width:1900px) {
     .Form-izq {
